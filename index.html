@@ -49,10 +49,10 @@
 </head>
 <body>
   <script>
-    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwxzcZNgPSjLyd1t5Lk-EojLjCukOpzjddbQVoD2MLPn-WEq1_wdjIQ-jypvtOPym82rw/exec";
+    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbyqcXWLNuLqm4Bx_daaE8bFIpURTS703D0w4CRQHu9AyEypVyMY_vjJJoaM_LXpkiM/exec";
     
     var url = document.location.href;
-    var k = url.substr(url.lastIndexOf("k=")+2);
+    var k = url.substr(url.lastIndexOf("k=")+1);
     
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
